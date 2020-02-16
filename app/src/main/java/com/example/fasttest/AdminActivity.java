@@ -42,7 +42,7 @@ public class AdminActivity extends AppCompatActivity {
                 adminQuestions = new Questions(pitanje_et.getText().toString(), odga_et.getText().toString(), odgb_et.getText().toString(),
                         odgc_et.getText().toString(), odgd_et.getText().toString(), odgovor_et.getText().toString());
                 databaseReference = FirebaseDatabase.getInstance().getReference();
-                databaseReference.child(rb_pitanje_et.getText().toString()).push().setValue(adminQuestions);
+                databaseReference.child(rb_pitanje_et.getText().toString()).setValue(adminQuestions);
 
                 rb_pitanje_et.setText("");
                 pitanje_et.setText("");
