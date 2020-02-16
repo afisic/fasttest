@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pozadina"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/id_student"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pw_student"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:hint="Korisnicko ime"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/pw_student"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/login_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:hint="Lozinka"
+        android:inputType="textPassword"
+        android:textSize="24dp" />
+
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Prijava" />
+</RelativeLayout>

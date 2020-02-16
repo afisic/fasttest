@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/pozadina"
+    tools:context=".AdminActivity">
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Redni broj pitanja(1, 2 , 3...)"
+        android:layout_marginBottom="14dp"
+        android:padding="8dp"
+        android:id="@+id/rb_pitanje_et"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Unesite pitanje..."
+        android:layout_marginBottom="14dp"
+        android:padding="8dp"
+        android:id="@+id/pitanje_et"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="odgovor a"
+        android:layout_marginBottom="14dp"
+        android:padding="8dp"
+        android:id="@+id/odga_et"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="odgovor b"
+        android:layout_marginBottom="14dp"
+        android:padding="8dp"
+        android:id="@+id/odgb_et"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="odgovor c"
+        android:layout_marginBottom="14dp"
+        android:padding="8dp"
+        android:id="@+id/odgc_et"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="odgovor d"
+        android:layout_marginBottom="14dp"
+        android:padding="8dp"
+        android:id="@+id/odgd_et"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="točan odgovor(a ,b ,c ,d)"
+        android:layout_marginBottom="34dp"
+        android:padding="8dp"
+        android:id="@+id/odgovor_et"
+        android:textAlignment="center"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/dodaj_btn"
+        android:text="Pošalji pitanje"/>
+
+</LinearLayout>
